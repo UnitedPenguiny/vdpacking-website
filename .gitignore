@@ -1,0 +1,18 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and local workspace state
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local tooling and generated runtime state
+node_modules/
+.wrangler/
+.devcontainer/
+__pycache__/
+*.log
+

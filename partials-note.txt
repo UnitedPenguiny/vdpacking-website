@@ -1,0 +1,2 @@
+This is a plain static build intentionally kept framework-free for Cloudflare Pages.
+Shared navigation/footer are duplicated across pages in v1 for maximum portability.
