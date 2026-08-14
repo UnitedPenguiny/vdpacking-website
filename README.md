@@ -44,3 +44,4 @@ Google Search Console setup and sitemap submission are intentionally deferred. T
 - Production branch: `main`
 - Preview branches: enabled for all non-`main` branches
 - Custom domains: none connected
+- Cloudflare Web Analytics: enabled for the Pages project; this note is non-functional and exists only to record the deployment trigger.
