@@ -35,3 +35,12 @@ The intended deployment is GitHub → Cloudflare Pages:
 - The production domain `vdpacking.net` is intentionally not connected yet, and no DNS or email/MX records should be changed for this project setup.
 
 Google Search Console setup and sitemap submission are intentionally deferred. The `vdgroups.com` redirect/migration is also intentionally deferred until the production-domain cutover is approved. Preserve the open business questions in `MIGRATION_INVENTORY.md` when making future changes.
+
+## Current Pages project
+
+- GitHub repository: `https://github.com/UnitedPenguiny/vdpacking-website`
+- Cloudflare Pages project: `vdpacking-website`
+- Primary temporary URL: `https://vdpacking-website.pages.dev`
+- Production branch: `main`
+- Preview branches: enabled for all non-`main` branches
+- Custom domains: none connected
