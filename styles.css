@@ -2733,7 +2733,7 @@ body.lightbox-open {
   overflow: hidden;
   padding: clamp(22px, 3vw, 40px) 0;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, .90) 0%, rgba(0, 0, 0, .74) 48%, rgba(0, 0, 0, .84) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, .84) 0%, rgba(0, 0, 0, .66) 48%, rgba(0, 0, 0, .78) 100%),
     url("assets/site/Hero/IMG_4305.jpg") center 58% / cover no-repeat;
   color: #fff;
 }
