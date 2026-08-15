@@ -5420,19 +5420,16 @@ body.portfolio-all-open {
   }
 }
 
-/* === 2026-08-15: Mobile gallery edge-to-edge + balanced lower spacing === */
+/* === 2026-08-15: Mobile gallery centered at a reduced scale === */
 @media (max-width: 640px) {
-  /* The mobile page container leaves 14px on each side. Let only the
-     homepage gallery bleed through that inset so the images reach the
-     viewport edges while the heading/copy stay aligned to the container. */
+  /* Keep the gallery inside the hero card with a balanced 20% reduction. */
   .portfolio-showcase {
-    width: calc(100% + 28px);
+    width: min(80vw, 520px);
     max-width: none;
-    margin-inline: -14px;
+    margin-inline: auto;
   }
 
-  /* Match the space beneath the gallery to the 6px image-row gap used at
-     this breakpoint, without changing the title-to-gallery spacing. */
+  /* Match the space beneath the smaller gallery without changing title spacing. */
   .portfolio-meta--hero {
     margin-top: -16px;
   }
