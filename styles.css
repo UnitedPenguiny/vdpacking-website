@@ -5452,3 +5452,49 @@ body.portfolio-all-open {
     padding-bottom: 5px;
   }
 }
+
+/* Homepage motto and mobile LINE floating control */
+@media (max-width: 640px) {
+  .portfolio-copy h1 {
+    max-width: 100%;
+    white-space: normal;
+    font-size: clamp(1.75rem, 8.2vw, 2.3rem);
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+  }
+
+  .mobile-actionbar {
+    position: fixed;
+    right: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    left: auto;
+    z-index: 60;
+    display: block;
+    width: fit-content;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .mobile-actionbar > a:first-child {
+    display: flex;
+    width: fit-content;
+    max-width: none;
+    min-height: 44px;
+    align-items: center;
+    padding: 3px 8px;
+    flex: 0 0 auto;
+    border: 1px solid #00b900;
+    border-radius: 8px;
+    background: #00b900;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+  }
+
+  .mobile-line-badge {
+    width: auto;
+    max-width: none;
+    height: 36px;
+    min-height: 0;
+    border-radius: 0;
+  }
+}
