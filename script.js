@@ -119,6 +119,106 @@
 })();
 
 
+// Google Ads conversion tracking for VD Packing's LINE Official destination
+(function () {
+  const lineOfficialUrl = "https://line.me/R/ti/p/%40vdbox";
+  const lineConversionSendTo = "AW-753832907/soFJCLXxo-IcEMunuucC";
+  const lineConversionFallbackMs = 1000;
+  const lineOfficialDestination = new URL(lineOfficialUrl);
+  const trackingInitializedKey = "__vdPackingLineConversionTrackingInitialized";
+
+  if (window[trackingInitializedKey]) return;
+  window[trackingInitializedKey] = true;
+
+  const isLineOfficialLink = (link) => {
+    if (!link || !link.href) return false;
+
+    try {
+      const destination = new URL(link.href, document.baseURI);
+      return destination.origin === lineOfficialDestination.origin
+        && destination.pathname === lineOfficialDestination.pathname
+        && destination.search === lineOfficialDestination.search;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  const sendLineConversion = () => {
+    if (typeof window.gtag !== "function") return false;
+
+    try {
+      window.gtag("event", "conversion", {
+        send_to: lineConversionSendTo
+      });
+      return true;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  const navigateAfterLineConversion = (url) => {
+    let hasNavigated = false;
+    let fallbackTimer = null;
+
+    const navigate = () => {
+      if (hasNavigated) return;
+      hasNavigated = true;
+      if (fallbackTimer) window.clearTimeout(fallbackTimer);
+      window.location.assign(url);
+    };
+
+    if (typeof window.gtag !== "function") {
+      navigate();
+      return;
+    }
+
+    fallbackTimer = window.setTimeout(navigate, lineConversionFallbackMs);
+
+    try {
+      window.gtag("event", "conversion", {
+        send_to: lineConversionSendTo,
+        event_callback: navigate
+      });
+    } catch (error) {
+      navigate();
+    }
+  };
+
+  const isSameTabTarget = (link) => {
+    const target = (link.getAttribute("target") || "").trim().toLowerCase();
+    return !target || target === "_self" || target === "_parent" || target === "_top";
+  };
+
+  const handleLineClick = (event) => {
+    if (event.type === "click" && event.button !== 0) return;
+    if (event.type === "auxclick" && event.button !== 1) return;
+
+    const target = event.target;
+    const link = target instanceof Element ? target.closest("a") : null;
+    if (!isLineOfficialLink(link)) return;
+
+    const preserveNativeBehavior = event.defaultPrevented
+      || event.metaKey
+      || event.ctrlKey
+      || event.shiftKey
+      || event.altKey
+      || event.type === "auxclick"
+      || !isSameTabTarget(link);
+
+    if (preserveNativeBehavior) {
+      sendLineConversion();
+      return;
+    }
+
+    event.preventDefault();
+    navigateAfterLineConversion(link.href);
+  };
+
+  document.addEventListener("click", handleLineClick);
+  document.addEventListener("auxclick", handleLineClick);
+})();
+
+
 // Compact rotating homepage portfolio
 (function () {
   const showcase = document.querySelector("[data-showcase]");
