@@ -5455,6 +5455,11 @@ body.portfolio-all-open {
 
 /* Homepage motto and mobile LINE floating control */
 @media (max-width: 640px) {
+  .portfolio-hero {
+    background-position: center, center bottom;
+    background-size: 100% 100%, auto 170%;
+  }
+
   .portfolio-copy h1 {
     max-width: 100%;
     white-space: normal;
