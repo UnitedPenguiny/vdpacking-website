@@ -5424,7 +5424,7 @@ body.portfolio-all-open {
 @media (max-width: 640px) {
   /* Keep the gallery inside the hero card with a balanced 20% reduction. */
   .portfolio-showcase {
-    width: min(80vw, 520px);
+    width: min(56vw, 364px);
     max-width: none;
     margin-inline: auto;
   }
