@@ -119,6 +119,8 @@
   const slots = showcase ? Array.from(showcase.querySelectorAll("[data-showcase-slot]")) : [];
   const mainSlot = slots[0] || null;
   const thumbSlots = slots.slice(1);
+  const isMobileShowcase = () => window.matchMedia && window.matchMedia("(max-width: 640px)").matches;
+  const getActiveThumbSlots = () => thumbSlots.filter((slot) => !slot.hasAttribute("data-showcase-mobile-only") || isMobileShowcase());
   const sourceItems = Array.from(document.querySelectorAll(".portfolio-all-item[data-lightbox]")).map((item) => {
     const image = item.querySelector("img");
     return {
@@ -153,13 +155,15 @@
   };
 
   const isInThumbWindow = (index) => {
-    if (!sourceItems.length || !thumbSlots.length) return false;
+    const activeThumbSlots = getActiveThumbSlots();
+    if (!sourceItems.length || !activeThumbSlots.length) return false;
     const offset = (index - thumbStartIndex + sourceItems.length) % sourceItems.length;
-    return offset < thumbSlots.length;
+    return offset < activeThumbSlots.length;
   };
 
   const keepCurrentVisibleInThumbs = (direction = 0) => {
-    if (!sourceItems.length || !thumbSlots.length || isInThumbWindow(currentIndex)) return;
+    const activeThumbSlots = getActiveThumbSlots();
+    if (!sourceItems.length || !activeThumbSlots.length || isInThumbWindow(currentIndex)) return;
 
     if (direction > 0) {
       thumbStartIndex = (thumbStartIndex + 1) % sourceItems.length;
@@ -176,7 +180,7 @@
 
     setSlotItem(mainSlot, currentIndex, true);
 
-    thumbSlots.forEach((slot, slotIndex) => {
+    getActiveThumbSlots().forEach((slot, slotIndex) => {
       const itemIndex = (thumbStartIndex + slotIndex) % total;
       setSlotItem(slot, itemIndex);
     });
@@ -256,6 +260,7 @@
     showcase.addEventListener("mouseleave", startTimer);
     showcase.addEventListener("focusin", stopTimer);
     showcase.addEventListener("focusout", startTimer);
+    window.addEventListener("resize", renderShowcase, { passive: true });
     startTimer();
   }
 
