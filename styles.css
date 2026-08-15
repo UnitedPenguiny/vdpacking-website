@@ -5456,13 +5456,17 @@ body.portfolio-all-open {
 }
 
 @media (max-width: 640px) {
+  .portfolio-showcase {
+    transform: translateY(-12px);
+  }
+
   .portfolio-stage {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 4px;
   }
 
   .portfolio-controls.portfolio-controls--simple {
-    transform: translateY(calc(11.4px - 12vw));
+    transform: translateY(calc(28.4px - 42vw));
   }
 
   .portfolio-stage-item--2,
