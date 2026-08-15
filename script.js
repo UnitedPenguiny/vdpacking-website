@@ -40,11 +40,15 @@
     setMenuState(menuToggle.getAttribute("aria-expanded") === "true");
   }
 
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const normalizePagePath = (path) => {
+    const normalized = path.replace(/\/+$/, "") || "/";
+    if (normalized === "/index.html") return "/";
+    return normalized.replace(/\.html$/, "");
+  };
+  const currentPage = normalizePagePath(window.location.pathname);
   document.querySelectorAll("[data-nav]").forEach((link) => {
-    const target = link.getAttribute("data-nav");
-    const isHome = (currentPage === "" || currentPage === "index.html") && target === "index.html";
-    if (target === currentPage || isHome) {
+    const target = normalizePagePath(new URL(link.getAttribute("data-nav") || "/", window.location.origin).pathname);
+    if (target === currentPage) {
       link.classList.add("is-active");
       link.setAttribute("aria-current", "page");
     }
