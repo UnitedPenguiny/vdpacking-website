@@ -2,6 +2,12 @@
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const siteNav = document.querySelector("[data-site-nav]");
   const header = document.querySelector("[data-header]");
+  const navShell = header ? header.querySelector(".nav-shell") : null;
+  const mobileActionbar = document.querySelector(".mobile-actionbar");
+
+  if (navShell && menuToggle && mobileActionbar && mobileActionbar.parentElement !== navShell) {
+    navShell.insertBefore(mobileActionbar, menuToggle);
+  }
 
   const setMenuState = (isOpen) => {
     if (!menuToggle || !siteNav) return;

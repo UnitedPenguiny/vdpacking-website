@@ -5542,3 +5542,48 @@ body.portfolio-all-open {
   }
 }
 
+/* Mobile LINE Official button: place it immediately left of the hamburger. */
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .nav-shell {
+    gap: 8px;
+  }
+
+  .mobile-actionbar {
+    position: static;
+    inset: auto;
+    z-index: auto;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .mobile-actionbar > a:first-child {
+    display: flex;
+    width: fit-content;
+    max-width: none;
+    min-height: 44px;
+    align-items: center;
+    padding: 3px 8px;
+    flex: 0 0 auto;
+    border: 1px solid #00b900;
+    border-radius: 8px;
+    background: #00b900;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+  }
+
+  .mobile-line-badge {
+    width: auto;
+    max-width: none;
+    height: 36px;
+    min-height: 0;
+    border-radius: 0;
+  }
+}
+
