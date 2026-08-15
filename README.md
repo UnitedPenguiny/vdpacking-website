@@ -31,17 +31,18 @@ The intended deployment is GitHub → Cloudflare Pages:
 - `main` is the approved production branch and must contain reviewed website changes only.
 - Create a feature branch for each change, push it, and review the Cloudflare Pages preview before merging it into `main`.
 - Cloudflare Pages publishes the repository root as a static site; no npm, framework, or build command is required.
-- Branch and pull-request previews are expected to use separate temporary `*.pages.dev` URLs.
-- The production domain `vdpacking.net` is intentionally not connected yet, and no DNS or email/MX records should be changed for this project setup.
+- Cloudflare Pages automatically deploys `main`; feature branches receive separate preview deployments.
+- Public production URLs use extensionless paths such as `/custom-boxes`, `/postal-printed`, `/express`, `/die-cut`, `/materials`, `/how-to-order`, and `/contact`.
+- The Pages hostname is `https://vdpacking-website.pages.dev`, and the production domain is live at `https://vdpacking.net`.
 
-Google Search Console setup and sitemap submission are intentionally deferred. The `vdgroups.com` redirect/migration is also intentionally deferred until the production-domain cutover is approved. Preserve the open business questions in `MIGRATION_INVENTORY.md` when making future changes.
+Google Search Console is configured for `vdpacking.net`. The sitemap has been submitted at `https://vdpacking.net/sitemap.xml`, and the 8 primary production URLs have been individually requested for indexing. SEO URL consistency has been fixed and merged. The historical `vdgroups.com` migration has not been executed and remains deferred. Dedicated LINE Official click tracking is deferred. Preserve the open business questions in `MIGRATION_INVENTORY.md` when making future changes.
 
 ## Current Pages project
 
 - GitHub repository: `https://github.com/UnitedPenguiny/vdpacking-website`
 - Cloudflare Pages project: `vdpacking-website`
-- Primary temporary URL: `https://vdpacking-website.pages.dev`
+- Pages hostname: `https://vdpacking-website.pages.dev`
+- Production domain: `https://vdpacking.net` (live)
 - Production branch: `main`
-- Preview branches: enabled for all non-`main` branches
-- Custom domains: none connected
-- Cloudflare Web Analytics: enabled for the Pages project; this note is non-functional and exists only to record the deployment trigger.
+- Feature branch previews: enabled for non-`main` branches
+- Cloudflare Web Analytics: enabled
