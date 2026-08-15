@@ -123,7 +123,7 @@
 (function () {
   const lineOfficialUrl = "https://line.me/R/ti/p/%40vdbox";
   const lineConversionSendTo = "AW-753832907/soFJCLXxo-IcEMunuucC";
-  const lineConversionFallbackMs = 1000;
+  const lineConversionFallbackMs = 250;
   const lineOfficialDestination = new URL(lineOfficialUrl);
   const trackingInitializedKey = "__vdPackingLineConversionTrackingInitialized";
 
@@ -177,7 +177,8 @@
     try {
       window.gtag("event", "conversion", {
         send_to: lineConversionSendTo,
-        event_callback: navigate
+        event_callback: navigate,
+        event_timeout: lineConversionFallbackMs
       });
     } catch (error) {
       navigate();
