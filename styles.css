@@ -191,7 +191,7 @@ ol {
   position: relative;
   z-index: 1;
   font-size: 1.12rem;
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: -0.08em;
   line-height: 1;
 }
@@ -204,7 +204,7 @@ ol {
 
 .brand-copy strong {
   font-size: 1.06rem;
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: 0.04em;
 }
 
@@ -394,9 +394,9 @@ ol {
   margin: 22px 0 22px;
   color: var(--ink);
   font-size: clamp(2.65rem, 5.3vw, 5.45rem);
-  font-weight: 950;
-  letter-spacing: -0.065em;
-  line-height: 1.03;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.08;
 }
 
 .hero-intro {
@@ -617,7 +617,7 @@ ol {
   box-shadow: 6px 7px 0 var(--ink);
   color: var(--ink);
   font-size: 0.78rem;
-  font-weight: 950;
+  font-weight: 900;
   line-height: 1.18;
   text-align: center;
   transform: rotate(-11deg);
@@ -651,7 +651,7 @@ ol {
   margin-bottom: 3px;
   color: var(--ink);
   font-size: 1.18rem;
-  font-weight: 950;
+  font-weight: 900;
   line-height: 1.25;
 }
 
@@ -702,9 +702,9 @@ h2,
 h3,
 h4 {
   color: var(--ink);
-  font-weight: 950;
-  letter-spacing: -0.045em;
-  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.18;
 }
 
 h2 {
@@ -1077,7 +1077,7 @@ h3 {
   color: var(--ink);
   font-family: "Kanit", sans-serif;
   font-size: clamp(2.7rem, 7vw, 5.9rem);
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: -0.12em;
   line-height: 1;
 }
@@ -1106,7 +1106,7 @@ h3 {
 .about-stat strong {
   display: block;
   font-size: 1.22rem;
-  font-weight: 950;
+  font-weight: 900;
 }
 
 .about-stat span {
@@ -1884,7 +1884,7 @@ h3 {
   .page-hero h1 {
     margin-top: 17px;
     font-size: clamp(2.35rem, 11vw, 3.8rem);
-    letter-spacing: -0.065em;
+    letter-spacing: normal;
   }
 
   .hero-intro {
@@ -2571,9 +2571,9 @@ body.lightbox-open {
   margin: 10px 0 14px;
   color: #fff;
   font-size: clamp(2.35rem, 5.2vw, 5.6rem);
-  font-weight: 950;
-  letter-spacing: -0.065em;
-  line-height: 1.02;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.08;
 }
 
 .showcase-intro p {
@@ -2654,9 +2654,9 @@ body.lightbox-open {
   margin: 22px 0 22px;
   color: var(--ink);
   font-size: clamp(2.35rem, 4.5vw, 4.7rem);
-  font-weight: 950;
-  letter-spacing: -0.06em;
-  line-height: 1.04;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.08;
 }
 
 @media (max-width: 1100px) {
@@ -2762,9 +2762,9 @@ body.lightbox-open {
   margin: 10px 0 18px;
   color: #fff;
   font-size: clamp(2.55rem, 5vw, 5.4rem);
-  font-weight: 950;
-  letter-spacing: -.062em;
-  line-height: .99;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.08;
 }
 
 .portfolio-copy > p {
@@ -4275,8 +4275,9 @@ body.portfolio-all-open {
   max-width: 520px;
   margin: 0;
   font-size: clamp(2rem, 3.4vw, 3.5rem);
-  line-height: 1.12;
-  letter-spacing: -0.035em;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-wrap: balance;
 }
 
 .portfolio-history-copy {
@@ -4329,11 +4330,11 @@ body.portfolio-all-open {
   }
 }
 
-/* 2026-08-14: Keep major Thai headings on one line where the viewport has enough room. */
+/* Keep major Thai headings readable at wide viewports while allowing natural wrapping. */
 @media (min-width: 1024px) {
   .page-hero h1 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(2.45rem, 4vw, 4.15rem);
   }
 
@@ -4346,7 +4347,7 @@ body.portfolio-all-open {
   .paper-section-head h2,
   .location-section-head h2 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(2.2rem, 2.9vw, 2.95rem);
   }
 
@@ -4366,9 +4367,9 @@ body.portfolio-all-open {
 
   .portfolio-history-below h2 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(2.05rem, 2.7vw, 2.7rem);
-    letter-spacing: -0.04em;
+    letter-spacing: normal;
   }
 
   .portfolio-history-copy {
@@ -4393,15 +4394,14 @@ body.portfolio-all-open {
   }
 }
 
-/* 2026-08-14: Mobile single-line heading pass.
-   Keep primary headings on one line on phone widths without overflowing the viewport. */
+/* Allow primary Thai headings to wrap naturally on phone widths. */
 @media (max-width: 560px) {
   .page-hero h1 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1.35rem, 6.1vw, 1.9rem);
-    line-height: 1.12;
-    letter-spacing: -0.045em;
+    line-height: 1.18;
+    letter-spacing: normal;
   }
 
   .section-header h2,
@@ -4409,17 +4409,17 @@ body.portfolio-all-open {
   .paper-section-head h2,
   .location-section-head h2 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1.2rem, 5.35vw, 1.7rem);
-    line-height: 1.16;
-    letter-spacing: -0.04em;
+    line-height: 1.18;
+    letter-spacing: normal;
   }
 
   .article-card h2 {
     max-width: none;
     font-size: clamp(1.2rem, 5.35vw, 1.7rem);
-    line-height: 1.16;
-    letter-spacing: -0.04em;
+    line-height: 1.18;
+    letter-spacing: normal;
   }
 
   .portfolio-history-heading {
@@ -4429,26 +4429,26 @@ body.portfolio-all-open {
 
   .portfolio-history-below h2 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1.05rem, 4.75vw, 1.4rem);
-    line-height: 1.16;
-    letter-spacing: -0.045em;
+    line-height: 1.18;
+    letter-spacing: normal;
   }
 
   .contact-card h2 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1.15rem, 5.6vw, 1.8rem);
-    line-height: 1.16;
-    letter-spacing: -0.04em;
+    line-height: 1.18;
+    letter-spacing: normal;
   }
 
   .contact-cta h3 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1rem, 4.6vw, 1.4rem);
     line-height: 1.2;
-    letter-spacing: -0.03em;
+    letter-spacing: normal;
   }
 }
 
@@ -4470,14 +4470,14 @@ body.portfolio-all-open {
   }
 }
 
-/* 2026-08-14: Keep the homepage hero brand title on one line on phones. */
+/* Keep the homepage hero brand title readable on phones. */
 @media (max-width: 560px) {
   .portfolio-copy h1 {
     max-width: none;
-    white-space: nowrap;
+    white-space: normal;
     font-size: clamp(1.85rem, 9.2vw, 2.35rem);
-    line-height: 1;
-    letter-spacing: -0.055em;
+    line-height: 1.08;
+    letter-spacing: normal;
   }
 }
 
@@ -5502,8 +5502,8 @@ body.portfolio-all-open {
     max-width: 100%;
     white-space: normal;
     font-size: clamp(1.75rem, 8.2vw, 2.3rem);
-    line-height: 1.14;
-    letter-spacing: -0.04em;
+    line-height: 1.08;
+    letter-spacing: normal;
   }
 
   .mobile-actionbar {
