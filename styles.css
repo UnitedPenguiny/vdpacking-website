@@ -191,7 +191,7 @@ ol {
   position: relative;
   z-index: 1;
   font-size: 1.12rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.08em;
   line-height: 1;
 }
@@ -204,7 +204,7 @@ ol {
 
 .brand-copy strong {
   font-size: 1.06rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
@@ -394,7 +394,7 @@ ol {
   margin: 22px 0 22px;
   color: var(--ink);
   font-size: clamp(2.65rem, 5.3vw, 5.45rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: 1.08;
 }
@@ -617,7 +617,7 @@ ol {
   box-shadow: 6px 7px 0 var(--ink);
   color: var(--ink);
   font-size: 0.78rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.18;
   text-align: center;
   transform: rotate(-11deg);
@@ -651,7 +651,7 @@ ol {
   margin-bottom: 3px;
   color: var(--ink);
   font-size: 1.18rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -702,7 +702,7 @@ h2,
 h3,
 h4 {
   color: var(--ink);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: 1.18;
 }
@@ -1077,7 +1077,7 @@ h3 {
   color: var(--ink);
   font-family: "Kanit", sans-serif;
   font-size: clamp(2.7rem, 7vw, 5.9rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.12em;
   line-height: 1;
 }
@@ -1106,7 +1106,7 @@ h3 {
 .about-stat strong {
   display: block;
   font-size: 1.22rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .about-stat span {
@@ -2571,7 +2571,7 @@ body.lightbox-open {
   margin: 10px 0 14px;
   color: #fff;
   font-size: clamp(2.35rem, 5.2vw, 5.6rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: 1.08;
 }
@@ -2654,7 +2654,7 @@ body.lightbox-open {
   margin: 22px 0 22px;
   color: var(--ink);
   font-size: clamp(2.35rem, 4.5vw, 4.7rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: 1.08;
 }
@@ -2762,7 +2762,7 @@ body.lightbox-open {
   margin: 10px 0 18px;
   color: #fff;
   font-size: clamp(2.55rem, 5vw, 5.4rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   line-height: 1.08;
 }
