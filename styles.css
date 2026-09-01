@@ -5505,7 +5505,9 @@ body.portfolio-all-open {
   }
 
   .portfolio-copy h1 {
+    width: min(80vw, 520px);
     max-width: 100%;
+    margin-inline: auto;
     white-space: normal;
     font-size: clamp(1.75rem, 8.2vw, 2.3rem);
     line-height: 1.08;
