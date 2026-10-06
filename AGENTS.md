@@ -89,7 +89,7 @@ Preserve the established direction:
 
 - warm kraft and cream backgrounds
 - dark green VD Packing brand color
-- Kanit typography
+- Kanit typography (the original Google Fonts v17 files are served locally from `assets/site/fonts/`, with weights 300–700 and the original Unicode subsets; keep `OFL.txt` and `sources.json`)
 - clean, practical manufacturing aesthetic
 - strong mobile usability
 - simple CSS, vector, or geometric icons

@@ -1,0 +1,167 @@
+{
+  "stylesheet": "https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap",
+  "version": "v17",
+  "downloaded": "2026-10-06",
+  "files": [
+    {
+      "file": "kanit-v17-thai-300.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4-ORWzVaF5NQ.woff2",
+      "sha256": "20aee722979a0f91b2baac3d0590a512b02fe00f80c454c07a178cc3964f33c2",
+      "bytes": 13156,
+      "subset": "thai",
+      "weight": 300
+    },
+    {
+      "file": "kanit-v17-vietnamese-300.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4-ORWoVaF5NQ.woff2",
+      "sha256": "6cde96b62cd06abb39190dc437e7c26d9b82e9bfe48a8156391038118dafb13e",
+      "bytes": 10392,
+      "subset": "vietnamese",
+      "weight": 300
+    },
+    {
+      "file": "kanit-v17-latin-ext-300.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4-ORWpVaF5NQ.woff2",
+      "sha256": "76096489e26ece4dae202dbeefcbe966bebc4ecdd4b5855262ab522a534180a6",
+      "bytes": 19840,
+      "subset": "latin-ext",
+      "weight": 300
+    },
+    {
+      "file": "kanit-v17-latin-300.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4-ORWnVaE.woff2",
+      "sha256": "a29db52c836726b49317c0861d922e195a3d827d07a935701cdfe1f26425f64a",
+      "bytes": 19048,
+      "subset": "latin",
+      "weight": 300
+    },
+    {
+      "file": "kanit-v17-thai-400.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKZ-Go6G5tXcraBGwCYdA.woff2",
+      "sha256": "943218ba72a5e68e3fc58fb6dd43493edeb0c4a05167748b4ee503748a8d8e12",
+      "bytes": 13452,
+      "subset": "thai",
+      "weight": 400
+    },
+    {
+      "file": "kanit-v17-vietnamese-400.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKZ-Go6G5tXcraaGwCYdA.woff2",
+      "sha256": "facbea8e3fea22cdd965441368b61f15b1e486c5b28d533bce5bd2ce1a785cb8",
+      "bytes": 10612,
+      "subset": "vietnamese",
+      "weight": 400
+    },
+    {
+      "file": "kanit-v17-latin-ext-400.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKZ-Go6G5tXcrabGwCYdA.woff2",
+      "sha256": "0bf36bd27ae03a64dfb971cf1adabadc6ebd73592fdf99a218f6b02d0f2f1663",
+      "bytes": 20084,
+      "subset": "latin-ext",
+      "weight": 400
+    },
+    {
+      "file": "kanit-v17-latin-400.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKZ-Go6G5tXcraVGwA.woff2",
+      "sha256": "1e856b3a04f93a23ec758ad37750f4dcfbde02334fd30358d02d5d4db3052bf2",
+      "bytes": 19300,
+      "subset": "latin",
+      "weight": 400
+    },
+    {
+      "file": "kanit-v17-thai-500.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5mOBWzVaF5NQ.woff2",
+      "sha256": "cce9152dbafcad068207294cbfcc74140e1b18c6c90d30af4a41630d5e73d191",
+      "bytes": 13288,
+      "subset": "thai",
+      "weight": 500
+    },
+    {
+      "file": "kanit-v17-vietnamese-500.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5mOBWoVaF5NQ.woff2",
+      "sha256": "3167b0a17fd6e4dda49566430a24d2e5a7fcbd9e8808d6a939e1eb74abf7ed68",
+      "bytes": 11024,
+      "subset": "vietnamese",
+      "weight": 500
+    },
+    {
+      "file": "kanit-v17-latin-ext-500.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5mOBWpVaF5NQ.woff2",
+      "sha256": "d9e02f4b1838d5383df49ec2019da72a6f69bdecbdf14b5cb3b992ab89a24a32",
+      "bytes": 20044,
+      "subset": "latin-ext",
+      "weight": 500
+    },
+    {
+      "file": "kanit-v17-latin-500.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5mOBWnVaE.woff2",
+      "sha256": "c6c4695e70f2b11892dfaec4d4ab44065ed3a847f4d531cfc1340d2e65a738c9",
+      "bytes": 19236,
+      "subset": "latin",
+      "weight": 500
+    },
+    {
+      "file": "kanit-v17-thai-600.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5KPxWzVaF5NQ.woff2",
+      "sha256": "ac40cf0d115bc06bdde46dcb264db6ea887d6eefe36f7f8286f3342f1facf078",
+      "bytes": 13784,
+      "subset": "thai",
+      "weight": 600
+    },
+    {
+      "file": "kanit-v17-vietnamese-600.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5KPxWoVaF5NQ.woff2",
+      "sha256": "50a775bb97745903cf0133e99c9bb007f82cf1233798c5e173eeed9a677b70ff",
+      "bytes": 10632,
+      "subset": "vietnamese",
+      "weight": 600
+    },
+    {
+      "file": "kanit-v17-latin-ext-600.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5KPxWpVaF5NQ.woff2",
+      "sha256": "b069fcda825a4946f5b4dd37a824ae176cefd889c1a400afdc5efc9d39e72bf9",
+      "bytes": 19900,
+      "subset": "latin-ext",
+      "weight": 600
+    },
+    {
+      "file": "kanit-v17-latin-600.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr5KPxWnVaE.woff2",
+      "sha256": "c3c4f89f25c7c8343a8b8ce0a120fe2c419809a1e92cc9313cbb5a36fb10a411",
+      "bytes": 19496,
+      "subset": "latin",
+      "weight": 600
+    },
+    {
+      "file": "kanit-v17-thai-700.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4uPhWzVaF5NQ.woff2",
+      "sha256": "20ee1ffc0cbccfc9e4b7d660d2937f82b75d0eb41354e71e22752495aa51f68a",
+      "bytes": 13488,
+      "subset": "thai",
+      "weight": 700
+    },
+    {
+      "file": "kanit-v17-vietnamese-700.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4uPhWoVaF5NQ.woff2",
+      "sha256": "4f57f2f655db00fce209ab4a2c4e5387960ae37f4a6696e80ba1d179e79d69a2",
+      "bytes": 10912,
+      "subset": "vietnamese",
+      "weight": 700
+    },
+    {
+      "file": "kanit-v17-latin-ext-700.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4uPhWpVaF5NQ.woff2",
+      "sha256": "4a84b9c83279bf9ada590a8ba5704357b1653ff951be64ff953fdd6dacaa5d47",
+      "bytes": 20136,
+      "subset": "latin-ext",
+      "weight": 700
+    },
+    {
+      "file": "kanit-v17-latin-700.woff2",
+      "url": "https://fonts.gstatic.com/s/kanit/v17/nKKU-Go6G5tXcr4uPhWnVaE.woff2",
+      "sha256": "a44817a3dcd26f5c659cd92c241f7c9e96414a74c0de249407064364573cd6b5",
+      "bytes": 19276,
+      "subset": "latin",
+      "weight": 700
+    }
+  ]
+}
