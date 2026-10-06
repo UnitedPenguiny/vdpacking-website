@@ -1,6 +1,10 @@
 # Canonical homepage
 /index.html / 301
 
+# Keep the standalone local preview out of public search results
+/VDPACKING_preview.html / 301
+/VDPACKING_preview / 301
+
 # Legacy vdgroups.com paths -> matching v2 pages
 /358536213656362935913652361136193625360336373618366036143636361736143660.html /postal-printed 301
 /3585362136563629359136143636361736143660364936213632365236173656361436363617361436603607364035853586360936343604.html /custom-boxes 301

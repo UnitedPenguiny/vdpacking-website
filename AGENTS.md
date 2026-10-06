@@ -81,7 +81,7 @@ Use existing assets when they satisfy the request. Do not create a new graphic m
 
 Before changing the pricing table on `postal-printed.html`, inspect both `postal-printed.html` and `assets/site/postal/`.
 
-The currently approved table asset is `assets/site/postal/details-table.jpg`. Do not regenerate, redesign, or replace it unless the user explicitly requests a redesign or replacement. Preserve the currently approved pricing and table content unless the user explicitly requests a change. Do not reintroduce the rejected text `สั่ง 1000 ใบขึ้นไปฟรีค่าบล็อก`.
+The currently approved table asset is `assets/site/postal/details-table.jpg`. Do not regenerate, redesign, or replace it unless the user explicitly requests a redesign or replacement. Preserve the currently approved pricing and table content unless the user explicitly requests a change. The postal and express pages also provide expandable HTML transcriptions of their approved pricing images. Keep the numbers and conditions synchronized with the images, and preserve the instruction to confirm current prices and production timing with the team. Do not reintroduce the rejected text `สั่ง 1000 ใบขึ้นไปฟรีค่าบล็อก`.
 
 ## VD Packing design system
 
@@ -111,6 +111,8 @@ Unless the user explicitly requests a change, preserve:
 - the centered, reduced mobile gallery inside the hero card
 - arrows vertically centered on the mobile large image
 - normal mobile text padding
+
+The homepage uses optimized `assets/site/Hero/factory-960.webp` (up to 640px) and `factory-1920.webp` (above 640px), derived from the approved factory photograph. Keep the image preload media queries aligned with the CSS breakpoint, and preserve the photograph, crop, and dark overlay.
 
 The mobile LINE Official button currently sits in the header immediately to the left of the hamburger. The desktop floating LINE control should remain separate and unchanged unless requested.
 
@@ -146,7 +148,7 @@ Production pages currently include:
 
 Shared files include `styles.css` and `script.js`. Deployment and SEO files include `robots.txt`, `sitemap.xml`, `_redirects`, and `_headers`.
 
-`VDPACKING_preview.html` is a local preview artifact and is not the production source of truth.
+`VDPACKING_preview.html` is a local preview artifact and is not the production source of truth. Its public `/VDPACKING_preview.html` and `/VDPACKING_preview` routes redirect permanently to the homepage; preserve both rules in `_redirects`.
 
 ## Verification standard
 
