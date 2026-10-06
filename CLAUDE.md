@@ -146,7 +146,7 @@ Production pages currently include:
 - `contact.html`
 - `404.html`
 
-Shared files include `styles.css` and `script.js`. Deployment and SEO files include `robots.txt`, `sitemap.xml`, `_redirects`, and `_headers`.
+Shared files include `styles.css` and `script.js`. All nine production HTML pages load `styles.css` with a `?v=` query containing the first 12 characters of its SHA-256 (computed after normalizing CRLF to LF). Whenever `styles.css` changes, update that version consistently across the nine pages so browsers receive the current stylesheet. Deployment and SEO files include `robots.txt`, `sitemap.xml`, `_redirects`, and `_headers`.
 
 `VDPACKING_preview.html` is a local preview artifact and is not the production source of truth. Its public `/VDPACKING_preview.html` and `/VDPACKING_preview` routes redirect permanently to the homepage; preserve both rules in `_redirects`.
 
