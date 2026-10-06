@@ -24,6 +24,8 @@ Cloudflare Pages project: `vdpacking-website`
 
 Cloudflare Pages hostname: `https://vdpacking-website.pages.dev`
 
+The `www.vdpacking.net` hostname redirects permanently to `https://vdpacking.net`, preserving paths and query strings for both HTTP and HTTPS. Cloudflare provides this through a proxied `A` record named `www` with the redirect-only address `192.0.2.1`, and the active Single Redirect `Redirect www to vdpacking.net` (rule ID `1a06c53134984a02a56464125e0d8edd`). Its match is `(http.host eq "www.vdpacking.net")`; its dynamic target is `concat("https://vdpacking.net", http.request.uri.path)`, status `301`, with Preserve query string enabled. Keep the DNS record proxied and the rule active. This hostname redirect is managed in Cloudflare; `_redirects` manages the site's page-path redirects.
+
 The site is a static multi-page website using HTML, CSS, vanilla JavaScript, local assets, GitHub, and Cloudflare Pages. Do not introduce a framework unless the user explicitly approves a concrete need.
 
 GitHub `origin/main` is the authoritative website source. Always inspect the current repository and fetch the latest remote state before starting work. Do not use an old ZIP, exported folder, cached build, `VDPACKING_preview.html`, or remembered commit as the baseline.
